@@ -14,13 +14,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 
 .header img {
     width: 50px;
     height: 50px;
-    margin-right: 14px;
+    margin-right: 13px;
 }
 
 .score {
@@ -33,6 +32,15 @@ body {
 
 .circle {
     position: relative;
+    margin-left: 80px;
+}
+
+#nextLevel {
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+    user-select: none;
+    margin-left: 50px;
 }
 
 .circle img {
@@ -60,6 +68,21 @@ body {
     pointer-events: none;
     user-select: none;
     animation: move-up 2s forwards;
+}
+
+#alert {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: #f44336; /* Красный цвет */
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
 }
 
 @keyframes move-up {
